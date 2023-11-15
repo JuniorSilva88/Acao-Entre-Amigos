@@ -1,0 +1,110 @@
+/*import-font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400&display=swap');
+
+/*Paleta de Cores*/
+:root {
+    --fundo:  #cbdad5;
+    --hover:  #89a7b1;
+    --borda:  #566981;
+    --sombra: #3a415a;
+    --fonte:  #34344e;
+}
+
+/*Reset-CSS*/
+* {
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Estilo geral */
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    background-color: var(--fundo);
+    color: var(--fonte);
+}
+
+/* Estilo do cabeçalho */
+.cabecalho {
+    background-color: var(--sombra);
+    padding: 10px;
+    text-align: center;
+}
+
+.cabecalho-imagem {
+    max-width: 100%;
+    height: auto;
+}
+
+.cabecalho-menu {
+    margin-top: 10px;
+}
+
+.cabecalho-item {
+    display: inline-block;
+    margin-right: 20px;
+    color: var(--fonte);
+    text-decoration: none;
+}
+
+/* Estilo do conteúdo principal */
+.conteudo {
+    padding: 20px;
+}
+
+.conteudo-principal-escrito {
+    width: 60%;
+    float: left;
+}
+
+.conteudo-principal-imagem,
+.conteudo-principal-imagem img {
+    width: 40%;
+    float: right;
+}
+
+.conteudo-principal-paragrafo {
+    margin-bottom: 15px;
+}
+
+/* Estilo do conteúdo secundário */
+.conteudo-secundario {
+    margin-top: 20px;
+}
+
+.conteudo-secundario-titulo {
+    color: var(--borda);
+}
+
+.conteudo-secundario-imagem {
+    width: 30%;
+    margin: 10px;
+}
+
+/* Estilo do rodapé */
+.rodape {
+    background-color: var(--sombra);
+    padding: 20px;
+    color: var(--fonte);
+}
+
+.redes-sociais {
+    margin-bottom: 20px;
+}
+
+.redes-sociais-icones-link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Estilo de responsividade */
+@media screen and (max-width: 768px) {
+    .conteudo-principal-escrito,
+    .conteudo-principal-imagem,
+    .conteudo-secundario-imagem {
+        width: 100%;
+        float: none;
+    }
+}
