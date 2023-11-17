@@ -3,11 +3,12 @@
 
 /*Paleta de Cores*/
 :root {
-    --fundo:  #cbdad5;
-    --hover:  #89a7b1;
-    --borda:  #566981;
+    --fundo: #cbdad5;
+    --hover: #89a7b1;
+    --borda: #566981;
     --sombra: #3a415a;
-    --fonte:  #34344e;
+    --fonte: #34344e;
+    --fundo2: #d5f9ed;
 }
 
 /*Reset-CSS*/
@@ -21,13 +22,19 @@
 /* Estilo geral */
 body {
     font-family: 'Roboto Flex', sans-serif;
-    background-color: var(--fundo);
+    background: linear-gradient(270deg, #ff9a00, #d0de21, #4fdc4a, #3fdad8);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
     color: var(--fonte);
 }
 
 /* Estilo do cabeçalho */
 .cabecalho {
-    background-color: var(--sombra);
+    background-color: var(--fundo2);
+    border-radius: 8px;
     padding: 10px;
     text-align: center;
 }
@@ -58,7 +65,33 @@ body {
     float: left;
 }
 
-.conteudo-principal-imagem,
+.conteudo-secundario-imagems {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 32px;
+    max-width: 98%;
+    min-width: 180px;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.conteudo-secundario-imagem {
+    margin: 0px, 16px;
+    width: 30%;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 4px 5px 4px var(--sombra);
+    cursor: pointer;
+}
+
+.conteudo-secundario-imagem:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 .conteudo-principal-imagem img {
     width: 40%;
     float: right;
@@ -84,13 +117,16 @@ body {
 
 /* Estilo do rodapé */
 .rodape {
-    background-color: var(--sombra);
+    background-color: var(--fundo2);
+    border-radius: 8px;
     padding: 20px;
     color: var(--fonte);
+    text-align: center;
 }
 
 .redes-sociais {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .redes-sociais-icones-link img {
@@ -101,10 +137,28 @@ body {
 
 /* Estilo de responsividade */
 @media screen and (max-width: 768px) {
+
     .conteudo-principal-escrito,
     .conteudo-principal-imagem,
     .conteudo-secundario-imagem {
         width: 100%;
         float: none;
     }
+}
+/*Este código cria um gradiente animado que percorre um ciclo de cores*/
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }

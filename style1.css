@@ -29,8 +29,8 @@ header, footer {
     background: var(--fundo);
     border-radius: 8px ;
 }
-/*Cabeçalho*/
 
+/*Cabeçalho*/
 .cabecalho {
     height: 180px;
     display: flex;
