@@ -37,6 +37,7 @@ body {
     border-radius: 8px;
     padding: 10px;
     text-align: center;
+    border-bottom: 2px solid var(--borda);
 }
 
 .cabecalho-imagem {
@@ -53,16 +54,19 @@ body {
     margin-right: 20px;
     color: var(--fonte);
     text-decoration: none;
+
 }
 
 /* Estilo do conteúdo principal */
 .conteudo {
     padding: 20px;
+    
 }
 
 .conteudo-principal-escrito {
-    width: 60%;
+    width: 90%;
     float: left;
+    border-bottom: 2px solid var(--borda);
 }
 
 .conteudo-secundario-imagems {
@@ -92,22 +96,18 @@ body {
     transform: scale(1.2);
 }
 
-.conteudo-principal-imagem img {
-    width: 40%;
-    float: right;
-}
-
 .conteudo-principal-paragrafo {
     margin-bottom: 15px;
 }
 
 /* Estilo do conteúdo secundário */
 .conteudo-secundario {
-    margin-top: 20px;
+    margin-top:30px;
+    text-align: center;
 }
 
 .conteudo-secundario-titulo {
-    color: var(--borda);
+    color: var(--fonte);
 }
 
 .conteudo-secundario-imagem {
@@ -115,24 +115,49 @@ body {
     margin: 10px;
 }
 
+/*Parceiros*/
+
+.conteudo-parceiros-imagems {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 32px;
+    max-width: 98%;
+    min-width: 180px;
+}
+
+.conteudo-parceiros-titulo{
+    text-align: center;
+    margin: 25px 25px;
+    border-bottom: 2px solid var(--borda);
+}
+.conteudo-parceiros-imagem {
+    margin: 0px, 16px;
+    width: 30vh;
+    height: 20vh;
+    border-radius: 25px;
+    box-shadow: 4px 5px 4px var(--sombra);
+    cursor: pointer;
+}
+
 /* Estilo do rodapé */
 .rodape {
+    border-top: 2px solid var(--borda);
     background-color: var(--fundo2);
     border-radius: 8px;
-    padding: 20px;
     color: var(--fonte);
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .redes-sociais {
-    margin-bottom: 20px;
-    text-align: left;
+    text-align-last: left;  
 }
 
 .redes-sociais-icones-link img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
 }
 
 /* Estilo de responsividade */
