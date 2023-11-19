@@ -3,64 +3,73 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description"
-        content="Refrigeração Industrial e Comercial, Câmara Fria, Manutenção de Câmara Fria, Projeto">
-    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="Ação Social, Ação entre Amigos, Comunidade, Caridade">
     <meta name="author" content="Junior Alexandre da Silva">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no ">
-    <link rel="stylesheet" href="style.css">
-    <!--Normalize css-->
-    <link rel="stylesheet" href="normalize.css">
-    <!-- Bootstrap CSS -->
-    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
-    <link rel="shortcut icon" href="/img/projeto.png" type="image/x-icon">
-    <title>Ação entre Amigos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/logo.jpg" type="image/x-icon">
+    <title>Doação</title>
 </head>
 
 <header class="cabecalho">
-    <img class="cabecalho-imagem" src="logo.jpg" alt="Logo">
+    <h1>Obrigado por considerar um Doação!</h1>
     <nav class="cabecalho-menu">
         <a class="cabecalho-item" href="index.html">Home</a>
-        <a class="cabecalho-item" href="doacoes.html">Doações</a>
-        <!-- Adicione mais links de navegação conforme necessário -->
     </nav>
 </header>
 
 <main class="conteudo">
-    <h1 class="conteudo-principal-escrito-titulo"Doações</h1>
+    <h1 class="conteudo-principal-escrito-titulo"> Doações </h1>
 
-    <p class="conteudo-principal-paragrafo">Obrigado por considerar fazer uma doação! Você pode optar por doar via PIX ou doar um presente.</p>
+        <p class="conteudo-principal-paragrafo"> <br> <br>
+            Você pode optar por doar: <br> <br> Via PIX ou doar um Presente.</p>
 
-    <h2>Doar via PIX</h2>
+        <h2>Doar via PIX</h2>
 
-    <p class="conteudo-principal-paragrafo">Por favor, faça sua doação para a seguinte chave PIX:</p>
-    <p class="conteudo-principal-paragrafo"><strong>41-9995756812 <br> (Alecio Camargo)</strong></p>
+        <p class="conteudo-principal-paragrafo"> <br> Por favor, faça sua doação para a seguinte chave PIX:</p>
+        <p class="conteudo-principal-paragrafo"> <br> <strong> 41-9995756812 <br> <br> (Alecio Camargo)</strong></p>
 
-    <h2>Doar um Presente</h2>
+        <h2>Doar um Presente</h2>
 
-    <p class="conteudo-principal-paragrafo">Por favor, selecione um presente da nossa lista de desejos:</p>
-    <ul>
-        <li>Livro</li>
-        <li>Brinquedo</li>
-        <li>Roupa</li>
-    </ul>
+        <p class="conteudo-principal-paragrafo"> <br> Por favor, selecione um presente da nossa lista de desejos:</p>
+        <ul>
+            <li>Livros;</li>
+            <li>Brinquedos;</li>
+            <li>Roupas;</li>
+        </ul>
 
-    <button onclick="alertaAgradecimento()">Fiz uma Doação</button>
+        <button onclick="alertaAgradecimento()">Confirmar Doação</button>
 
-    <script>
-    function alertaAgradecimento() {
-      alert("Obrigado pela sua doação!");
-    }
-    </script>
+        <script>
+            function alertaAgradecimento() {
+                alert("Obrigado pela sua doação!");
+            }
+        </script>
 </main>
 
 <footer class="rodape">
-    <h5 class="copyright">©Copyright- 2023</h5>
-    <p class="conteudo-principal-paragrafo">Obrigado por visitar nosso site!</p>
-    <p> Desenvolvido por:<a class="desenvolvido-por" href="https://github.com/JuniorSilva88" target="_blank"
-        rel="external"> Junior Alexandre da Silva </a></p>
+    <section class="redes-sociais">
+        <div>
+            <a class="redes-sociais-icones-link"
+                href="https://www.instagram.com/acao_entre_amigos_21/?igshid=MXRocnpkZGlhczlkbQ%3D%3D&utm_source=qr"
+                target="_blank" rel="external">
+                <img src="/img/instagram.png" alt="instagram"> </a>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h5 class="copyright">©Copyright- 2023</h5>
+            <p class="conteudo-principal-paragrafo"> Todos os direitos reservados - Ação Entre Amigos</p>
+            <br>
+            <p> Desenvolvido por:<a class="desenvolvido-por" href="https://github.com/JuniorSilva88" target="_blank"
+                    rel="external">Junior Silva</a></p>
+        </div>
+    </section>
 </footer>
 
 </body>
+
 </html>
