@@ -35,11 +35,6 @@ body {
     border-bottom: 2px solid var(--borda);
 }
 
-.cabecalho-imagem {
-    max-width: 15%;
-    height: 15%;
-}
-
 .cabecalho-menu {
     margin-top: 10px;
 }
@@ -53,6 +48,7 @@ body {
 /* Estilo do conteúdo principal */
 .conteudo {
     padding: 20px;
+    text-align: center;
 }
 
 .conteudo-principal-escrito {
@@ -61,7 +57,7 @@ body {
     border-bottom: 2px solid var(--borda);
 }
 
-.conteudo-secundario-imagens {
+.conteudo-secundario-imagems {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -146,9 +142,9 @@ body {
 }
 
 .redes-sociais-icones-link img {
-    width: 60px;
-    height: 60px;
-    margin-right: 30px;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
 }
 
 /* Estilo de responsividade */
