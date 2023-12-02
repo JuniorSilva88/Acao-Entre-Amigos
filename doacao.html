@@ -7,61 +7,74 @@
     <meta name="author" content="Junior Alexandre da Silva">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no ">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon">
+    <script src="/js/script.js"></script>
     <title>Doação</title>
 </head>
 
-<header class="cabecalho">
-    <h1>Obrigado por considerar uma Doação!</h1>
-    <nav class="cabecalho-menu">
-        <a class="cabecalho-item" href="index.html">Home</a>
-    </nav>
-</header>
+<body>
+    <header class="cabecalho">
 
-<main class="conteudo">
-        <h1 class="conteudo-principal-escrito-titulo"> Doações </h1>
-        <p class="conteudo-principal-paragrafo" <br> 
-            Você pode optar por doar: <br> <br> Via PIX ou doar um Presente.</p>
-        <h2>Doar via PIX</h2>
-        <p class="conteudo-principal-paragrafo"> <br> Por favor, faça sua doação para a seguinte chave PIX:</p>
+        <img class="cabecalho-imagem" src="img/logomarca2.png" alt="Logo Ação entre Amigos
         
-        <button onclick="alertaAgradecimento()">Clique aqui para Visualizar</button>
-        <script>
-            function alertaAgradecimento() {
-                alert("41-9995756812 - (Alecio Camargo)");
-            }
-        </script>
-        <h2>  <br> Doar um Presente</h2>
-        <p class="conteudo-principal-paragrafo"> <br> Entre em contato por uma de Nossas Redes Socias: <br> <br>
-             Basta informar qual item da lista deseja doar.</p>
-             <h3>Livros / Roupas / Brinquedos</h3>
-</main>
+        <h1>Obrigado por considerar uma Doação!</h1>
+        
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-item btn btn-primary" href="index.html">Home</a>
+        </nav>
+   
+    </header>
 
-<footer class="rodape">
-    <section class="redes-sociais">
-        <div>
-            <a class="redes-sociais-icones-link"
-                href="https://www.instagram.com/acao_entre_amigos_21/?igshid=MXRocnpkZGlhczlkbQ%3D%3D&utm_source=qr"
-                target="_blank" rel="external">
-                <img src="/img/instagram.png" alt="instagram"> </a>
-            <a href="https://api.whatsapp.com/send?phone=5541995756812&text=Oi!%20gostaria%20de%20fazer%20uma%20doa%C3%A7%C3%A3o%20."
-                target="_blank" rel="external">
-                <img src="img/whatsapp.png" alt="whatsapp"></a>
-        </div>
-    </section>
-    <section>
-        <div>
-            <h5 class="copyright">©Copyright- 2023</h5>
-            <p class="conteudo-principal-paragrafo"> Todos os direitos reservados - Ação Entre Amigos</p>
-            <br>
-            <p> Desenvolvido por:<a class="desenvolvido-por" href="https://github.com/JuniorSilva88" target="_blank"
-                    rel="external">Junior Silva</a></p>
-        </div>
-    </section>
-</footer>
+    <main class="conteudo">
+        <h1 class="conteudo-principal-escrito-titulo"> Doações </h1>
+        <p class="conteudo-principal-paragrafo">
+            Você pode optar por doar: <br> Via PIX ou Doar um Presente.
+        </p>
+        <h2>Doar via PIX</h2>
+        <p class="conteudo-principal-paragrafo">
+            Clique no botão para copiar a chave Pix:
+        </p>
+
+        <input type="password" value="419995756812" id="myInput" class="hidden-input">
+        <button onclick="myFunction()" class="btn btn-primary">Copiar</button>
+
+
+        <h2> <br> Doar um Presente</h2>
+        <p class="conteudo-principal-paragrafo">
+            <br> Entre em contato por uma de Nossas Redes Socias: <br>
+            Basta informar qual item da lista deseja doar.
+        </p>
+
+        <h3>Livros / Roupas / Brinquedos</h3>
+
+    </main>
+
+    <footer class="rodape">
+        <section class="redes-sociais">
+            <div>
+                <a class="redes-sociais-icones-link"
+                    href="https://www.instagram.com/acao_entre_amigos_21/?igshid=MXRocnpkZGlhczlkbQ%3D%3D&utm_source=qr"
+                    target="_blank" rel="external">
+                    <img src="/img/instagram.png" alt="Instagram"> </a>
+                <a href="https://api.whatsapp.com/send?phone=5541995756812&text=Oi!%20gostaria%20de%20fazer%20uma%20doa%C3%A7%C3%A3o%20."
+                    target="_blank" rel="external">
+                    <img src="img/whatsapp.png" alt="Whatsapp"></a>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h5 class="copyright">©Copyright- 2023</h5>
+                <p class="conteudo-principal-paragrafo"> Todos os direitos reservados - Ação Entre Amigos</p>
+                <br>
+                <p> Desenvolvido por:<a class="desenvolvido-por" href="https://github.com/JuniorSilva88" target="_blank"
+                        rel="external">Junior Silva</a></p>
+            </div>
+        </section>
+    </footer>
 
 </body>
 

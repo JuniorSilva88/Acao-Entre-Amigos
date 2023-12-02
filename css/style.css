@@ -15,13 +15,17 @@
     box-sizing: border-box;
 }
 
-/* Estilo geral */
+/* Gradiente animado */
+@keyframes AnimationName {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 body {
     font-family: 'Roboto Flex', sans-serif;
     background: linear-gradient(270deg, #ff9a00, #d0de21, #4fdc4a, #3fdad8);
     background-size: 1000% 1000%;
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
     animation: AnimationName 30s ease infinite;
     color: var(--fonte);
 }
@@ -33,6 +37,12 @@ body {
     padding: 10px;
     text-align: center;
     border-bottom: 2px solid var(--borda);
+}
+
+.cabecalho-imagem {
+    width: 15%;
+    height: 25%px;
+
 }
 
 .cabecalho-menu {
@@ -62,15 +72,15 @@ body {
     align-items: center;
     justify-content: space-around;
     gap: 32px;
-    max-width: 98%;
-    min-width: 180px;
+    max-width: 90%;
+    min-width: 150px;
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 .conteudo-secundario-imagem {
-    margin: 0px, 16px;
+    margin: 0px 16px;
     width: 30%;
     height: 300px;
     border-radius: 8px;
@@ -86,6 +96,11 @@ body {
 
 .conteudo-principal-paragrafo {
     margin-bottom: 15px;
+    
+}
+
+.hidden-input {
+    display: none;
 }
 
 /* Estilo do conteúdo secundário */
@@ -99,10 +114,10 @@ body {
 }
 
 .conteudo-secundario-imagem {
-    width: 30%;
+    width: 100%;
+    max-width: 280px; 
     margin: 10px;
 }
-
 /*Parceiros*/
 
 .conteudo-parceiros-imagems {
@@ -119,6 +134,7 @@ body {
     margin: 25px 25px;
     border-bottom: 2px solid var(--borda);
 }
+
 .conteudo-parceiros-imagem {
     margin-left: 20px;
     width: 30vh;
@@ -149,11 +165,12 @@ body {
 
 /* Estilo de responsividade */
 @media screen and (max-width: 768px) {
-
     .conteudo-principal-escrito,
     .conteudo-principal-imagem,
-    .conteudo-secundario-imagem {
+    .conteudo-secundario-imagem,
+    .conteudo-parceiros-imagem {
         width: 100%;
+        max-width: none; /* Certifique-se de remover qualquer limite máximo em dispositivos menores, se necessário */
         float: none;
     }
 }
