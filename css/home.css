@@ -1,0 +1,117 @@
+/*Paleta de Cores*/
+:root {
+    --fundo: #cbdad5;
+    --hover: #89a7b1;
+    --borda: #566981;
+    --sombra: #3a415a;
+    --fonte: #34344e;
+    --fundo2: #d5f9ed;
+}
+
+/*Reset-CSS*/
+* {
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Gradiente animado */
+@keyframes AnimationName {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    background: #5433FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,#5433FF, #A5FECB, #20BDFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,#5433FF, #A5FECB, #20BDFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 1000% 1000%;
+    animation: AnimationName 30s ease infinite;
+    color: var(--fonte);
+}
+
+header {
+    color: var(--fonte) ;
+    background-color: var(--fundo2);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid var(--borda);
+}
+
+main {
+    padding: 20px;
+}
+
+#about, #imagens, #doacao, #parceiros {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.conteudo-secundario-imagem {
+    width: 100%;
+    max-width: 280px;
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow: 4px 5px 4px var(--sombra);
+}
+
+.conteudo-secundario-imagem:hover {
+    transform: scale(1.075);
+}
+
+/*Parceiros*/
+.conteudo-parceiros-imagems {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 32px;
+    max-width: 98%;
+    min-width: 180px;
+}
+
+.conteudo-parceiros-titulo {
+    text-align: center;
+    margin: 25px 25px;
+    border-bottom: 2px solid var(--borda);
+}
+
+.conteudo-parceiros-imagem {
+    margin-left: 20px;
+    width: 30vh;
+    height: 20vh;
+    border-radius: 25px;
+    box-shadow: 4px 5px 4px var(--sombra);
+}
+
+.redes-sociais {
+    text-align: left;
+}
+
+.redes-sociais-icones-link img {
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+footer {
+    border-top: 2px solid var(--borda);
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: var(--fundo2);
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    form {
+        max-width: 400px;
+        margin: auto;
+    }
+}
