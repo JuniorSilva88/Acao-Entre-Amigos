@@ -14,6 +14,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Gradiente animado */
 @keyframes AnimationName {
     0% { background-position: 0% 50%; }
@@ -32,7 +33,7 @@ body {
 }
 
 header {
-    color: var(--fonte) ;
+    color: var(--fonte);
     background-color: var(--fundo2);
     border-radius: 8px;
     padding: 10px;
@@ -44,26 +45,35 @@ main {
     padding: 20px;
 }
 
-#imagens, #doacao, #parceiros {
+#about, #imagens, #doacao, #parceiros {
     text-align: center;
     padding-top: 20px;
 }
 
-.conteudo-secundario-imagem , .doacao-imagen {
+.conteudo-secundario-imagem, .doacao-imagen {
     width: 100%;
     max-width: 280px;
     margin: 10px;
     border-radius: 25px;
     box-shadow: 4px 5px 4px var(--sombra);
+    transition: transform 0.3s ease; /* Para uma transição suave */
 }
 
-.conteudo-secundario-imagem:hover {
+/* Para as imagens dos parceiros */
+.conteudo-parceiros-imagem.ativa {
+    box-shadow: 0 0 5px #ff0000; /* Sombras para as imagens dos parceiros */
+}
+
+
+/* Classe para ampliar a imagem ao clicar */
+.conteudo-secundario-imagem.ampliada {
     transform: scale(2.1);
 }
 
 .doacao-imagen:hover {
     transform: scale(1.1);
 }
+
 .imagens-anteior {
     padding-top: 2%;
 }
