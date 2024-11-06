@@ -44,7 +44,7 @@ main {
     padding: 20px;
 }
 
-#about, #imagens, #doacao, #parceiros {
+#imagens, #doacao, #parceiros {
     text-align: center;
     padding-top: 20px;
 }
@@ -74,8 +74,8 @@ main {
     align-items: center;
     justify-content: space-around;
     gap: 32px;
-    max-width: 48%;
-    min-width: 80px;
+    max-width: 28%;
+    min-width: 60px;
 }
 
 .conteudo-parceiros-titulo {
